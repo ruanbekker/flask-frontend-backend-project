@@ -7,7 +7,7 @@ app = Flask(__name__)
 def main_app():
     try:
         search_value = request.args.get('keyword')
-        response = requests.get('http://localhost:5001/api/v1/term/' + search_value)
+        response = requests.get('http://backend:5001/api/v1/term/' + search_value)
         return render_template('index.html', response=response.json())
     except:
         return render_template('index.html')
