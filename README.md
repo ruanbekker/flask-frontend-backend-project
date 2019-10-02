@@ -11,6 +11,15 @@ UI -> QueryParam: /?keyword=[string] -> Request to Backend API -> Matches [strin
 
 The search query runs against the "project_text" key in [backend/data.json](backend/data.json)
 
+## Usage
+
+```
+$ git clone https://github.com/ruanbekker/flask-frontend-backend-project
+$ cd flask-frontend-backend-project
+$ docker-compose build
+$ docker-compose up
+```
+
 ## Screenshots
 
 When opening the UI:
