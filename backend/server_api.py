@@ -1,6 +1,5 @@
 from flask import Flask, request, jsonify, render_template
 import json
-import requests
 
 df = open('/code/data.json', 'r')
 data = json.loads(df.read())
